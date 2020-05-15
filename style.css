@@ -1,0 +1,48 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.app{
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 1px;
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer"
+    ;
+}
+.spinner{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+header{
+    background-color:tomato ;
+    text-align: center;
+    grid-area: header;
+}
+
+section{
+    background-color:#fb1 ;
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+footer{
+    background-color: seagreen;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
